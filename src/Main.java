@@ -1,5 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Bicycle bicycle1 = new Bicycle("bicycle1", 2);
+        Bicycle bicycle2 = new Bicycle("bicycle2", 2);
+        Car car1 = new Car("car1", 4);
+        Car car2 = new Car("car2", 4);
+        Track truck1 = new Track("truck1", 6);
+        Track truck2 = new Track("truck2", 8);
+
+        ServiceStation station = new ServiceStation();
+        station.check(bicycle1);
+        station.check(bicycle2);
+        station.check(car1);
+        station.check(car2);
+        station.check(truck1);
+        station.check(truck2);
     }
 }
